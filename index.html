@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <img src="assets/image/blurry.jpg" alt="Background" class="background-image">
+    <div class="form-wrapper">
+
+      <!-- Registration Form -->
+      <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form id="regForm" novalidate>
+          <div class="input-group">
+            <input type="text" id="firstname" placeholder="First Name">
+            <span class="error"></span>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="middlename" placeholder="Middle Name (Optional)">
+            <span class="error"></span>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="lastname" placeholder="Last Name">
+            <span class="error"></span>
+          </div>
+
+          <div class="input-group">
+            <select id="suffix">
+              <option value="">Select Suffix (Optional)</option>
+              <option value="Jr.">Jr.</option>
+              <option value="Sr.">Sr.</option>
+              <option value="II">II</option>
+              <option value="III">III</option>
+              <option value="IV">IV</option>
+            </select>
+            <span class="error"></span>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="contact" placeholder="Contact">
+            <span class="error"></span>
+          </div>
+
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Email">
+            <span class="error"></span>
+          </div>
+
+          <div class="input-group">
+            <select id="course">
+              <option value="">Select Course</option>
+              <option value="Computer Engineering">Computer Engineering</option>
+              <option value="Electrical Engineering">Electrical Engineering</option>
+              <option value="Electronics Engineering">Electronics Engineering</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+            </select>
+            <span class="error"></span>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="id" placeholder="ID">
+            <span class="error"></span>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="batch" name="batch" placeholder="Batch Year"/>
+            <span class="error"></span>
+          </div>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+    <!-- Success Message -->
+    <div id="successContainer" class="success-container" style="display:none;">
+      <div id="successDetails"></div>
+      <button class="btn" onclick="window.location.reload()">Register Another</button>
+      <div class="thank-you">Thank you for registering!</div>
+    </div>
+
+  </div>
+
+  <script src="assets/js/model.js"></script>
+  <script src="assets/js/controller.js"></script>
+</body>
+</html>
